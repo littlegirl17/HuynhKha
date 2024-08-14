@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #242527;
+    /* background-color: #18191b; */
+
+}
+
+.main_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_main {
+    display: flex;
+    position: absolute;
+    top: -80px;
+    left: 70px;
+    border-radius: 1px solid #fff;
+}
+
+.avatar_main_image {
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
+
+.avatar_main_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar_main_name {
+    color: #fff;
+    padding: 90px 0 0 20px;
+}
+
+.main_content {
+    padding-top: 150px;
+}
+
+
+/*----------------------------START TAB-----------------------------------------*/
+
+.tabs {
+    display: flex;
+    position: relative;
+}
+
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+}
+
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+}
+
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-item.active {
+    opacity: 1;
+}
+
+.tab-content {
+    padding: 28px 0;
+}
+
+.tab-pane {
+    color: #fff;
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.box-sp {
+    width: 100%;
+
+    position: relative;
+
+}
+
+.box-sp-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.box-sp-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: scale 500ms;
+
+}
+
+.box-sp-img:hover img {
+    scale: 120%;
+}
+
+.intro input {
+    visibility: hidden;
+    opacity: 0;
+    margin: 7px 5px;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.intro input:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.intro {
+    position: absolute;
+    top: 240px;
+}
+
+.box-sp:hover {
+    cursor: pointer;
+}
+
+.box-sp:hover input {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.sale p {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 1px;
+    background-color: red;
+    text-align: center;
+    padding-top: 4px;
+    color: #ffffff;
+}
+
+
+.box-sp a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+
+}
+
+.box-sp a:hover {
+    color: #259CD8;
+}
+
+h4 {
+    color: red;
+}
+
+
+span .giacu {
+    padding-left: 5px;
+    color: black;
+    text-decoration: line-through;
+}
+
+/*----------------------------END TAB-----------------------------------------*/
+
+/*----------------------------START PROJECT-----------------------------------------*/
+.tab_project {
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 20px 20px;
+    margin: 20px 0;
+}
+
+.tab_project_item {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    padding-top: 20px;
+}
+
+.tab_project_item_img {
+    width: 200px;
+    height: 200px;
+}
+
+.tab_project_item_img img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 500ms, border 500ms, border-radius 500ms;
+    /* Thêm transition cho border-radius */
+}
+
+
+.tab_project_item_img img:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    /* Giữ nguyên border-radius là 20px khi hover */
+
+
+}
+
+.tab_project_item_content {
+    color: #000;
+}
+
+.tab_project_item_content span {
+    color: #909090;
+    font-size: 0.9rem;
+    padding-left: 10px;
+}
+
+.tab_project_item_content li {
+    margin: 0 0;
+    padding: 2px 0 8px 0;
+    list-style: circle;
+}
+
+.tab_project_item_content h2:hover {
+    color: #c23564;
+    cursor: pointer;
+}
+
+.tab_project_item_content li:hover {
+    color: #c23564;
+    cursor: pointer;
+}
+
+.tab_project_item_content a {
+    text-decoration: none;
+    color: #0cc0df;
+}
+
+.tab_project_item_content a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------END PROJECT-----------------------------------------*/
+
+
+/*----------------------------START -----------------------------------------*/
+/*----------------------------END -----------------------------------------*/
+
+
+/*----------------------------START -----------------------------------------*/
+/*----------------------------END -----------------------------------------*/
+
+
+/*----------------------------START -----------------------------------------*/
+/*----------------------------END -----------------------------------------*/
